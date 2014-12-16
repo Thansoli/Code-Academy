@@ -4,7 +4,12 @@ meal = 44.50
 tax = 0.0675
 tip = 0.15
 
-meal = meal + meal * tax
-total = meal + meal * tip
+# meal = meal + meal * tax
+# total = meal + meal * tip
+
+# Changing the value of a preset variable is bad, yes?
+
+meal_tax = meal + meal * tax
+total = meal_tax + meal_tax * tip
 
 print("%.2f" % total)
